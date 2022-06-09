@@ -451,7 +451,7 @@ def aries_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Music Setup", callback_data="aboutmanu_cbguide"
+                            text="My Group", url="https://t.me/free_cartoons"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_")],
