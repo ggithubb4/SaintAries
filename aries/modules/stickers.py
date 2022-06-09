@@ -678,7 +678,7 @@ __help__ = """
   ❍ `/stickers` : Find stickers for given term on combot sticker catalogue
 """
 
-__mod_name__ = "Stickers"
+__mod_name__ = "🔘 Stickers"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker, run_async=True)
 KANG_HANDLER = DisableAbleCommandHandler(
