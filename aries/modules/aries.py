@@ -85,7 +85,7 @@ def lawak(update, context):
     msg = update.effective_message
     msg.reply_video(
         random.choice(LAWAK_STRINGS),
-        caption=f"""**Powered by: @free_cartoons** 🔥""",
+        caption=f"""Powered by: @free_cartoons** 🔥""",
         parse_mode=ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup(
             [
