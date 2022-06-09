@@ -80,16 +80,8 @@ async def inline_help_func(__help__):
             input_message_content=InputTextMessageContent(
                 "Click A Button To Get Started."
             ),
-            thumb_url="https://telegra.ph/file/02fcf8117a0d6cbf5b4c6.png",
+            thumb_url="https://te.legra.ph/file/ff55c6e973c5a67dbb6e7.png",
             reply_markup=buttons,
-        ),
-        InlineQueryResultArticle(
-            title="Support",
-            description="Official Aries Support.",
-            input_message_content=InputTextMessageContent(
-                "https://t.me/idzeroidsupport"
-            ),
-            thumb_url="https://telegra.ph/file/02fcf8117a0d6cbf5b4c6.png",
         ),
     ]
     answerss = await alive_function(answerss)
@@ -100,24 +92,23 @@ async def alive_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/idzeroid_bot"),
+        InlineKeyboardButton("Updates", url="https://t.me/check_this_channel"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
 
     msg = f"""
-**[Aries](https://t.me/idzeroidsupport)**
+**[Rocket](https://t.me/auto_filter_saving_bot)**
 **MainBot:** `{bot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME})
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Aries Status",
-            thumb_url="https://telegra.ph/file/02fcf8117a0d6cbf5b4c6.png",
+            thumb_url="https://te.legra.ph/file/ff55c6e973c5a67dbb6e7.png",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
