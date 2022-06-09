@@ -107,7 +107,7 @@ async def alive_function(answers):
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
-            description="Check Aries Status",
+            description="Check My Status",
             thumb_url="https://te.legra.ph/file/ff55c6e973c5a67dbb6e7.png",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
