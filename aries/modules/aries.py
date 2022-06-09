@@ -130,7 +130,7 @@ dispatcher.add_handler(LAWAK_HANDLER)
 DIARYARYZA_HANDLER = DisableAbleCommandHandler("diaryaryza", diaryaryza, run_async=True)
 dispatcher.add_handler(DIARYARYZA_HANDLER)
 
-__mod_name__ = "Extras"
+__mod_name__ = "🔘 Extras"
 
 
 __command_list__ = ["aries", "diaryaryza", "lawak"]
