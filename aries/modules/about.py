@@ -1,10 +1,7 @@
 __help__ = """
-** ✨ Aries - A Powerful Telegram Group Manager ✨ **
-Powerful Abilities
-• Group Voice Chat Music Play ❤️
-• Youtube Downloader 🎵
-• And More ⚡
-Developer [Aryza](https://t.me/IdzXartez)
-Support Group [Support](https://t.me/idzeroidsupport)
+** ✨ Rocket - A Powerful Telegram Group Manager and Movie Provider ✨ **
+
+Developer [Geronimo Lover](https://t.me/Geronimo1234)
+Updates [Projects KG](https://t.me/check_this_channel)
 """
 __mod_name__ = "🔘 About"
