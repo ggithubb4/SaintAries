@@ -85,12 +85,12 @@ def lawak(update, context):
     msg = update.effective_message
     msg.reply_video(
         random.choice(LAWAK_STRINGS),
-        caption=f"""<i>Powered by: Aries Robot</i> 🔥""",
+        caption=f"""**Powered by: @free_cartoons** 🔥""",
         parse_mode=ParseMode.HTML,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support", url="https://t.me/idzeroidsupport"),
+                    InlineKeyboardButton("Updates", url="https://t.me/check_this_channel"),
                 ],
             ]
         ),
@@ -106,7 +106,7 @@ def diaryaryza(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ `/aries`*:* gives random aries media.
+ ❍ `/aries`*:* gives random media.
  ❍ `/asupan`*:* gives random asupan medi.
  ❍ `/chika`*:* gives random chika media.
  ❍ `/wibu`*:* gives random wibu media.
@@ -130,7 +130,7 @@ dispatcher.add_handler(LAWAK_HANDLER)
 DIARYARYZA_HANDLER = DisableAbleCommandHandler("diaryaryza", diaryaryza, run_async=True)
 dispatcher.add_handler(DIARYARYZA_HANDLER)
 
-__mod_name__ = "Aries Extras"
+__mod_name__ = "Extras"
 
 
 __command_list__ = ["aries", "diaryaryza", "lawak"]
