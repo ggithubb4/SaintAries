@@ -91,7 +91,7 @@ I specialize in managing Entertainment and all type groups and channels.
 buttons = [
     [
         InlineKeyboardButton(text=" ｢ Details 」", callback_data="aboutmanu_"),
-        InlineKeyboardButton(text=" ｢ Inline 」", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text=" ｢ Add Me 」", url="http://t.me/auto_filter_saving_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
