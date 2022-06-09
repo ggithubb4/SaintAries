@@ -77,12 +77,13 @@ GROUP_START_IMG = (
 
 PM_START_TEXT = """
 Hello there, [👋](https://te.legra.ph/file/5c4479cce9c1ca4d0c1b2.png) I'm {}.
-Im Powerfull Auto Filter Bot And I Will Help In Managing Your Group Too.
+Im A Movie Provider Bot And I Will Help In Managing Your Group Too.
+Just Add Me To Your Group And Enjoy🔥
 
 Maintained by : [Projects KG](https://t.me/check_this_channel)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
-• `{}` *Users, across* `{}` *chats.*
+• `{}` *Users, across* `{}` *Groups.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 I specialize in managing Entertainment and all type groups and channels.
 ✪ Make sure you read *DETAILS* Section Below ✪ 
