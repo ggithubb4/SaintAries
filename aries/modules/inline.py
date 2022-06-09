@@ -3,8 +3,8 @@ import traceback
 from aries import pbot as app
 from aries.utils.inlinefuncs import *
 
-__mod_name__ = "🔘 Inline"
-__help__ = """See inline for help related to inline"""
+__mod_name__ = "🔘 Add files"
+__help__ = """Forward me a file from a publc channel to add files of that channel to my movie database"""
 
 
 @app.on_inline_query()
