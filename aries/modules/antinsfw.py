@@ -89,7 +89,7 @@ async def detect_nsfw(_, message):
 **Hentai:** `{results.hentai} %`
 **Drawings:** `{results.drawings} %`
 **————————————————————**
-__Powered By @idzeroid_bot__.
+__Powered By @free_music123__.
 """
     )
 
