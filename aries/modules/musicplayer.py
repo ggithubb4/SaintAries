@@ -1,10 +1,11 @@
 __help__ = """
 🔘 Setting up.
 ❍ Make bot admin.
-❍ Invite Assistant with type /userbotjoin or ask at @idzeroidsupport for assistant.
+❍ Invite Assistant with type /userbotjoin 
 ❍ Start a voice chat.
 ❍ Try /play [song name] for the first time by an admin.
-❍ If userbot joined enjoy music, If not add manually to your group and retry.
+❍ If userbot joined enjoy music, If not add manually to your group and retry. 
+❍ If it doesnt work, Sorry from our side.
 
 🔘 Commands.
 ⇝ Song Playing.
