@@ -346,11 +346,11 @@ async def del_profanity(event):
 #
 
 __help__ = """
-Aries can protect your group from NSFW senders, Slag word users and also can force members to use English
+I can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 🔘 *Commmands*:
   ❍ `/gshield <on/off>`*:* Enable|Disable Porn cleaning
   ❍ `/globalmode <on/off>`*:* Enable|Disable English only mode
   ❍ `/profanity <on/off>`*:* Enable|Disable slag word cleaning
 """
-__mod_name__ = "Shield"
+__mod_name__ = "🔘 Shield"
