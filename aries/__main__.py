@@ -333,7 +333,7 @@ def help_button(update, context):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Support", url="https://t.me/idzeroidsupport"
+                                text="Updates", url="https://t.me/check_this_channel"
                             ),
                         ],
                     ]
