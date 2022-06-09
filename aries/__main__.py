@@ -57,6 +57,8 @@ from aries import (
     updater,
 )
 
+PICS = "https://te.legra.ph/file/5c4479cce9c1ca4d0c1b2.png"
+
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from aries.modules import ALL_MODULES
@@ -67,21 +69,21 @@ from aries.modules.helper_funcs.readable_time import get_readable_time
 from aries.modules.sql import users_sql as sql
 
 HELP_MSG = "Click The Button Below To Get Help Menu In Your Private Message."
-HELP_IMG = "https://telegra.ph/file/ac893610cae84f302b2da.jpg"
+HELP_IMG = random.choice(PICS)
 GROUP_START_IMG = (
-    "CAACAgIAAx0CXBdkHQAC34lhpHKAV3nIlqfcnYmDkIhbOFTktwACFBAAAkXe2EuBs3crQ6mMdR4E"
+    "https://te.legra.ph/file/5c4479cce9c1ca4d0c1b2.png"
 )
 
 PM_START_TEXT = """
-Hello there, [👋](https://telegra.ph/file/ac893610cae84f302b2da.jpg) I'm {}.
-Im Powerfull Management Bot And I Will Help In Managing Your Group.
-Maintained by : [Aryza](https://t.me/idzxartez)
-Founder And Dev Of : [IDZEROID SYNDICATES](https://t.me/idzeroidsupport).
+Hello there, [👋](https://te.legra.ph/file/5c4479cce9c1ca4d0c1b2.png) I'm {}.
+Im Powerfull Auto Filter Bot And I Will Help In Managing Your Group Too.
+
+Maintained by : [Projects KG](https://t.me/check_this_channel)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 • `{}` *Users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-Made specifically to manage your group , I specialize in managing Entertainment and all type groups and channels.
+I specialize in managing Entertainment and all type groups and channels.
 ✪ Make sure you read *DETAILS* Section Below ✪ 
 """
 
@@ -92,23 +94,22 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text=" ➕ ｢ Summon Me 」➕ ",
-            url="t.me/idzeroid_bot?startgroup=true",
+            text="🎬 Movies 🎬",
+            url="https://t.me/international_free_movies",
         ),
     ],
     [
-        InlineKeyboardButton(text=" ｢ Support 」", url="http://t.me/idzeroidsupport"),
+        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/free_movie_channel"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/idzeroid"),
+        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/check_this_channel"),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [Saint Aries](https://telegra.ph/file/ac893610cae84f302b2da.jpg)
+*Main Commands :*
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
@@ -119,9 +120,9 @@ HELP_STRINGS = f"""
 
 
 DONATE_STRING = """Hello, glad to hear you want to donate!
- You can support the project via [pulsa](#) or by contacting @IdzXartez\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+ But we dont accept any donations
+ You can support the project via [Sharing my channel](https://t.me/share/url?url=https://t.me/check_this_channel)
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -265,10 +266,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/idzeroidsupport"
+                            text="Channel", url=f"https://t.me/international_free_movies"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/idzeroid"
+                            text="Updates", url="https://telegram.dog/check_this_channel"
                         ),
                     ],
                 ]
@@ -385,8 +386,8 @@ def aries_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*👋Hi again!  The name's {dispatcher.bot.first_name}  \n\nA powerful group management bot built to help you manage your group easily.* "
-            f"\n\n 🔥 Join [Idzeroid Syndicates](https://t.me/idzeroidsupport) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*👋Hi again!  The name's {dispatcher.bot.first_name}  \n\nA powerful bot built to help you manage your group and provide movies easily.* "
+            f"\n\n 🔥 Join My [Official Channel](https://t.me/international_free_movies) 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\n ⚡️ 》 I can restrict users."
             f"\n\n ⚡️ 》 I can greet users with customizable welcome messages and even set a group's rules."
@@ -394,7 +395,6 @@ def aries_about_callback(update, context):
             f"\n\n ⚡️ 》 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             f"\n\n ⚡️ 》 I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             f"\n\n ⚡️ 》 I check for admins' permissions before executing any command and more stuffs"
-            f"\n\n If you have any question about *Aries*, let us know at @IdzeroidSupport."
             f"\n\n👇 You Can Know More About *Aries* By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -434,7 +434,7 @@ def aries_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/idzeroidsupport).\n"
+            f"\n\nYou Can get Updates about {dispatcher.bot.first_name} by joining [This Channel](https://t.me/check_this_channel).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -459,9 +459,7 @@ def aries_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*Aries Is the redisigned version of Daisy and Saitama And Othrer for the best performance.*"
-            f"\n\nAries source code was rewritten by @IdzXartez and All Of Conrtibutor For Help Aries"
-            f"\n\nIf Any Question About aries, \nLet Us Know At @Idzeroidsupport.",
+            text=f"*Rocket Is just the redisigned version of Daisy and Saitama And Othrer for the best performance.*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -517,12 +515,11 @@ def aries_about_callback(update, context):
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @IdzXartez spending many sleepless nights.. So, Respect it."
+            f"\n✪ Always try to keep credits, so \n  This hardwork is done spending many sleepless nights.. So, Respect it."
             f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
             f"\n✪ If you need to ask anything about \n  this bot, Go @Idzeroidsupport."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n\nFor any kind of help, related to this bot, Join @idzeroidsupport."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -544,8 +541,8 @@ def aries_about_callback(update, context):
             f"\n3. **after promoting me, type /admincache in group to update the admin list."
             f"\n4. **add @IdzMusic to your group."
             f"\n5. **turn on the video chat first before start to play music.\n\n"
-            f"\n📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or you can ask Admins in @idzeroidsupport.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n📌 **This function crashes frequently. We recommend not to use!**\n"
+            f"\n⚡ Powered by @free_music123 \n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -572,7 +569,7 @@ def aries_about_callback(update, context):
             f"\n6. **/video (name video) for download video."
             f"\n7. **/lyrics for searching lyrics.\n\n"
             f"\n📌 **Also you can download music or video with push button menu.**\n"
-            f"\n⚡ __Powered by Aries A.I__\n",
+            f"\n⚡ Powered by @free_music123 \n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -628,10 +625,10 @@ def get_help(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"https://telegram.dog/idzeroidsupport"
+                            text="Channel", url=f"https://t.me/international_free_movies"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url="https://telegram.dog/idzeroid"
+                            text="Updates", url="https://telegram.dog/check_this_Channel"
                         ),
                     ],
                     [
@@ -899,7 +896,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@IdzeroidSupport", "⚡️")
+            dispatcher.bot.sendMessage(f"@check_this_channel", "⚡️")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
