@@ -261,7 +261,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             message.reply_photo(
-                photo=random.choice(PICS)
+                photo=HELP_IMG
                 text=PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(uptime),
