@@ -4,4 +4,4 @@ __help__ = """
 Developer [Geronimo Lover](https://t.me/Geronimo1234)
 Updates [Projects KG](https://t.me/check_this_channel)
 """
-__mod_name__ = "🔘 About"
+__mod_name__ = "🔘 About Me"
