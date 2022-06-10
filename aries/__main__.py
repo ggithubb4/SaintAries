@@ -110,11 +110,11 @@ buttons = [
     [
         InlineKeyboardButton(
             text="🎬 Movies 🎬",
-            url="https://t.me/international_free_movies",
+            url="https://t.me/free_movie_channel",
         ),
     ],
     [
-        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/free_movie_channel"),
+        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/international_free_movies"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
         InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/check_this_channel"),
     ],
@@ -125,6 +125,7 @@ HELP_STRINGS = f"""
 *Main Commands :*
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
+✪ /stats: You can know my status using this.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
@@ -259,8 +260,9 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            message.reply_text(
-                PM_START_TEXT.format(
+            message.reply_photo(
+                photo=random.choice(PICS)
+                text=PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
@@ -531,6 +533,7 @@ def aries_about_callback(update, context):
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
             f"\n✪ This hardwork is done spending many sleepless nights.. So, Respect it."
+            f"\n✪ The movies provided by this bot is not owned by ourselves. They are posted in internet by someone else."
             f"\n✪ Some modules in this bot is owned by different authors, So All credits goes to them."
             f"\n✪ Please don't overuse AI Chat.",
             parse_mode=ParseMode.HTML,
