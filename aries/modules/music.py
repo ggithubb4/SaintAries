@@ -16,7 +16,7 @@ from aries import pbot
 from aries.conf import get_str_key
 from aries.pyrogramee.pluginshelper import get_text, progress
 
-GENIUS = get_str_key("GENIUS_API_TOKEN", None)
+GENIUS = "gDvfXycbGHbzeN7sjoDyUEd_a_Imqo6ltewW_AOrrCIecXIEFdp4tN87ibvcLMGY"
 
 
 @pbot.on_message(filters.command(["vsong", "video"]))
