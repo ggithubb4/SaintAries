@@ -100,11 +100,13 @@ Maintained by : [Projects KG](https://t.me/check_this_channel)
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 I specialize in managing Entertainment and all type groups and channels.
 ✪ Hit /help to know my features ✪ 
+
+⚠️You need to join @international_free_movies to get movies⚠️
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=" ｢ Updates 」", url="http://t.me/check_this_channel"),
+        InlineKeyboardButton(text=" ｢ Join Here 」", url="http://t.me/international_free_movies"),
         InlineKeyboardButton(text=" ｢ Add Me 」", url="http://t.me/auto_filter_saving_bot?startgroup=true"),
     ],
     [
@@ -114,7 +116,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/international_free_movies"),
+        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/check_this_Channel"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
         InlineKeyboardButton(text=" ｢ Group 」", url="http://t.me/free_cartoons"),
     ],
