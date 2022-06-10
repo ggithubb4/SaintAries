@@ -99,12 +99,12 @@ Maintained by : [Projects KG](https://t.me/check_this_channel)
 • `{}` *Users, across* `{}` *Groups.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 I specialize in managing Entertainment and all type groups and channels.
-✪ Make sure you read *DETAILS* Section Below ✪ 
+✪ Hit /help to know my features ✪ 
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=" ｢ Details 」", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text=" ｢ Updates 」", url="http://t.me/check_this_channel"),
         InlineKeyboardButton(text=" ｢ Add Me 」", url="http://t.me/auto_filter_saving_bot?startgroup=true"),
     ],
     [
@@ -116,7 +116,7 @@ buttons = [
     [
         InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/international_free_movies"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
-        InlineKeyboardButton(text=" ｢ Update 」", url="http://t.me/check_this_channel"),
+        InlineKeyboardButton(text=" ｢ Group 」", url="http://t.me/free_cartoons"),
     ],
 ]
 
@@ -272,8 +272,8 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
             )
     else:
-        message.reply_animation(
-            GROUP_START_IMG,
+        message.reply_photo(
+            random.choice(PICS),
             caption="<code> Aries Online \nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
