@@ -28,4 +28,4 @@ async def awake(event):
     await tbot.send_file(event.chat_id, PHOTO, caption=ARIES, buttons=BUTTON)
 
 
-__mod_name__ = "Alive"
+__mod_name__ = "🔘 Alive"
