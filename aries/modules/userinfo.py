@@ -363,10 +363,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/IDZEROID/15"
+                                "Music", url="https://t.me/song_requestgroup"
                             ),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/IDZEROID/14"
+                                "Anime", url="https://t.me/free_cartoons"
                             ),
                         ],
                         [
@@ -384,10 +384,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/IDZEROID/15"
+                                "Music", url="https://t.me/song_requestgroup"
                             ),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/IDZEROID/14"
+                                "Anime", url="https://t.me/free_cartoons"
                             ),
                         ],
                         [
@@ -487,7 +487,7 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[🔥 Support](https://t.me/IDZEROIDSUPPORT) | [🔥 Movie Channel](https://t.me/artezid)\n\n"
+            + f"\n\n[🔥 Updates](https://t.me/check_this_Channel) | [🔥 Channel](https://t.me/free_movie_channel)\n\n"
             + "╘══「 by [Aryza](https://t.me/IdzXartez) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -500,9 +500,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n🔥 [Support](https://t.me/IDZEROIDSUPPORT) | 🔥 [Movie Channel](https://t.me/artezid)\n\n"
+                    + f"\n\n🔥 [Updates](https://t.me/check_this_Channel) | 🔥 [Channel](https://t.me/free_movie_channel)\n\n"
                 )
-                + "╘══「 by [Aryza](https://t.me/IdzXartez) 」\n"
+                + "╘══「 by [Geronimo Lover](https://t.me/Geronimo1234) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -633,8 +633,6 @@ When marked as AFK, any mentions will be replied to with a message stating that 
  ❍ `/afk <reason>`*:* Mark yourself as AFK.
  ❍  brb <reason>: Same as the afk command, but not a command.\n 
   
-*What is that health thingy?*
-⇝ Come and see [HP System explained](https://t.me/IDZEROIDSUPPORT/26469)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
@@ -657,7 +655,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Info"
+__mod_name__ = "🔘 Info"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
