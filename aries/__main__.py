@@ -113,12 +113,12 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🎬 Movies 🎬",
-            url="https://t.me/free_movie_channel",
+            text="🔄 My Updates 🔄",
+            url="https://t.me/check_this_Channel",
         ),
     ],
     [
-        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/check_this_Channel"),
+        InlineKeyboardButton(text=" ｢ Channel 」", url="https://t.me/free_movie_channel"),
         InlineKeyboardButton(text=" [❌] ", callback_data="close"),
         InlineKeyboardButton(text=" ｢ Group 」", url="http://t.me/free_cartoons"),
     ],
