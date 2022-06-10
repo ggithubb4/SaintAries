@@ -262,7 +262,7 @@ def start(update: Update, context: CallbackContext):
         else:
             message.reply_photo(
                 HELP_IMG,
-                text=PM_START_TEXT.format(
+                caption=PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
@@ -270,7 +270,6 @@ def start(update: Update, context: CallbackContext):
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
             )
     else:
         message.reply_animation(
