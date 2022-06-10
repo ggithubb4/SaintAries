@@ -903,8 +903,8 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
         update.effective_message.reply_text(
-            "You can also donate to the person currently running me "
-            "[here]({})".format(DONATION_LINK),
+            "🥰 Thanks from"
+            "[Geronimo Lover]({})".format(DONATION_LINK),
             parse_mode=ParseMode.MARKDOWN,
         )
 
