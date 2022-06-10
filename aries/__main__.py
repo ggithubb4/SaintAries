@@ -450,7 +450,9 @@ def aries_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
+            f"\n\nYou need to make {dispatcher.bot.first_name} admin in your group with full rights.\n"
+            f"\nIf You Can Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
+            f"\n\nYou need to check /help menu to be aware of the functions of {dispatcher.bot.first_name}\n"
             f"\n\nYou Can get Updates about {dispatcher.bot.first_name} by joining [This Channel](https://t.me/check_this_channel).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
