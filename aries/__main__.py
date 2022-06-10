@@ -58,7 +58,20 @@ from aries import (
     updater,
 )
 
-PICS = "https://te.legra.ph/file/5c4479cce9c1ca4d0c1b2.png"
+PICS = "https://te.legra.ph/file/5c4479cce9c1ca4d0c1b2.png",
+"https://te.legra.ph/file/ff55c6e973c5a67dbb6e7.png",
+"https://te.legra.ph/file/c345be6ffc56dd2c180d2.png",
+"https://te.legra.ph/file/fa8cc2ba756d3300c9eb3.png",
+"https://te.legra.ph/file/029433942ed25fde9dacb.png",
+"https://te.legra.ph/file/9120fea1364c76da3b452.png",
+"https://te.legra.ph/file/6109fe2dac060b66ff007.png",
+"https://te.legra.ph/file/750be5a875acf24337957.png",
+"https://te.legra.ph/file/4506bddc905d1503983d4.png",
+"https://te.legra.ph/file/f1a31557b63b1e0169d51.png",
+"https://te.legra.ph/file/134d9b2ae1b236d55fb13.png",
+"https://te.legra.ph/file/528ce9870d0363d024af8.png",
+"https://te.legra.ph/file/a19210dcdba7efcb6348f.png",
+"https://te.legra.ph/file/6e2417103baac15c08078.png"
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
