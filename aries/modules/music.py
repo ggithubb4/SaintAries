@@ -24,7 +24,7 @@ async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
+        message.chat.id, f"`Getting {urlissed} From Servers. Please Wait.`"
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
@@ -61,7 +61,7 @@ async def ytmusic(client, message: Message):
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Video Name ➠** `{thum}` \n**Channel :** `{thums}` \n\n**Powered By :** @song_requestgroup"
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
@@ -94,7 +94,7 @@ async def ytmusic(client, message: Message):
         )
         return
     pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From BRAZZERS Servers. Please Wait.`"
+        message.chat.id, f"`Getting {urlissed} .... Please Wait!`"
     )
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
@@ -133,7 +133,7 @@ async def ytmusic(client, message: Message):
         await pablo.edit(f"**Failed To Download** \n**Error :** `{str(e)}`")
         return
     c_time = time.time()
-    capy = f"**Song Name :** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Song Name :** `{thum}` \n**Channel :** `{thums}` \n\n**Powered By :** @song_requestgroup"
     file_stark = f"{ytdl_data['id']}.mp3"
     await client.send_audio(
         message.chat.id,
@@ -147,7 +147,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From XNXX Music!`",
+            f"`Uploading {urlissed} Song!`",
             file_stark,
         ),
     )
