@@ -103,7 +103,7 @@ Maintained by : [Projects KG](https://t.me/check_this_channel)
 I specialize in managing Entertainment and all type groups and channels.
 ✪ Hit /help to know my features ✪ 
 
-⚠️You need to join [@international_free_movies](https://t.me/international_free_movies) to get movies⚠️
+⚠️You need to join [@international_free_movies](https://t.me/international_free_movies) for movies⚠️
 """
 
 buttons = [
@@ -265,7 +265,7 @@ def start(update: Update, context: CallbackContext):
 
         else:
             message.reply_photo(
-                HELP_IMG,
+                random.choice(PICS),
                 caption=PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
                     escape_markdown(uptime),
@@ -278,7 +278,7 @@ def start(update: Update, context: CallbackContext):
     else:
         message.reply_photo(
             random.choice(PICS),
-            caption="<code> Aries Online \nI am Awake Since</code>: <code>{}</code>".format(
+            caption="<code>Rocket is Online \nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
