@@ -25,7 +25,7 @@ async def _(event):
     if event.fwd_from:
         return
 
-    webevent = await event.reply("searching........")
+    webevent = await event.reply("Go to google and search Yourself🤣🤣🤣")
     match = event.pattern_match.group(1)
     page = re.findall(r"page=\d+", match)
     try:
