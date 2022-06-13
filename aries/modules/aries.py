@@ -106,7 +106,7 @@ def diaryaryza(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ `/aries`*:* gives random media.
+ ❍ `/md`*:* gives random media.
  ❍ `/asupan`*:* gives random asupan medi.
  ❍ `/chika`*:* gives random chika media.
  ❍ `/wibu`*:* gives random wibu media.
@@ -123,7 +123,7 @@ __help__ = """
 """
 
 
-ARIES_HANDLER = DisableAbleCommandHandler("aries", aries, run_async=True)
+ARIES_HANDLER = DisableAbleCommandHandler("md", aries, run_async=True)
 dispatcher.add_handler(ARIES_HANDLER)
 LAWAK_HANDLER = DisableAbleCommandHandler("lawak", lawak, run_async=True)
 dispatcher.add_handler(LAWAK_HANDLER)
@@ -133,5 +133,5 @@ dispatcher.add_handler(DIARYARYZA_HANDLER)
 __mod_name__ = "🔘 Extra"
 
 
-__command_list__ = ["aries", "diaryaryza", "lawak"]
+__command_list__ = ["md", "diaryaryza", "lawak"]
 __handlers__ = [ARIES_HANDLER, DIARYARYZA_HANDLER, LAWAK_HANDLER]
