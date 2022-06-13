@@ -103,7 +103,6 @@ Maintained by : [Projects KG](https://t.me/check_this_channel)
 I specialize in managing Entertainment and all type groups and channels.
 ✪ Hit /help to know my features ✪ 
 
-⚠️You need to join [@international_free_movies](https://t.me/international_free_movies) for movies⚠️
 """
 
 buttons = [
