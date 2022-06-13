@@ -4,7 +4,10 @@ from aries import pbot as app
 from aries.utils.inlinefuncs import *
 
 __mod_name__ = "🔘 Add files"
-__help__ = """Forward me a file from a publc channel to add files of that channel to my movie database"""
+__help__ = """1. Make me the admin of your channel if it's private.
+2. make sure that your channel does not contains camrips, porn and fake files.
+3. Forward the last message to me with forwarded tag.
+4. I'll add all the files in that channel to my db."""
 
 
 @app.on_inline_query()
