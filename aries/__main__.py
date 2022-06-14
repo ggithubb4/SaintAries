@@ -264,8 +264,8 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            await asyncio.sleep(4)
-            await message.reply_photo(
+            asyncio.sleep(4)
+            message.reply_photo(
                 random.choice(PICS),
                 caption=PM_START_TEXT.format(
                     escape_markdown(context.bot.first_name),
