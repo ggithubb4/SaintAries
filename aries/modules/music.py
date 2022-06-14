@@ -23,8 +23,8 @@ GENIUS = "gDvfXycbGHbzeN7sjoDyUEd_a_Imqo6ltewW_AOrrCIecXIEFdp4tN87ibvcLMGY"
 async def ytmusic(client, message: Message):
     urlissed = get_text(message)
 
-    pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} From Servers. Please Wait.`"
+    pablo = await client.send_sticker(
+        chat_id=message.chat.id, sticker="CAACAgUAAxkBAAEFCQFiqDo4eMyjUyLht96-Xh6KbU1ntQACmgADyJRkFCxl4eFc7yVqJAQ"
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
@@ -74,7 +74,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {urlissed} Song From PORNHUB Music!`",
+            f"`Uploading {urlissed} Song !`",
             file_stark,
         ),
     )
@@ -93,8 +93,8 @@ async def ytmusic(client, message: Message):
             "Invalid Command Syntax, Please Check Help Menu To Know More!",
         )
         return
-    pablo = await client.send_message(
-        message.chat.id, f"`Getting {urlissed} .... Please Wait!`"
+    pablo = await client.send_sticker(
+        chat_id=message.chat.id, sticker="CAACAgUAAxkBAAEFCQFiqDo4eMyjUyLht96-Xh6KbU1ntQACmgADyJRkFCxl4eFc7yVqJAQ"
     )
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
@@ -208,7 +208,7 @@ def time_to_seconds(time):
 
 @pbot.on_message(filters.command(["lyric", "lyrics"]))
 async def _(client, message):
-    lel = await message.reply("Searching For Lyrics.....")
+    lel = await message.reply("Searching For Lyrics..... This may not work!")
     query = message.text
     if not query:
         await lel.edit("`What I am Supposed to find `")
