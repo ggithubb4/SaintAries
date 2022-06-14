@@ -644,7 +644,7 @@ def get_help(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Channel", url=f"https://t.me/international_free_movies"
+                            text="Channel", url=f"https://t.me/free_movie_channel"
                         ),
                         InlineKeyboardButton(
                             text="Updates", url="https://telegram.dog/check_this_Channel"
@@ -652,7 +652,7 @@ def get_help(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Music Setup", callback_data="aboutmanu_cbguide"
+                            text="Join Here", url="https://telegram.dog/international_free_movies"
                         ),
                     ],
                 ]
