@@ -264,7 +264,9 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            message.reply_sticker("CAACAgIAAxkBAAEFCN5iqB011-1UhrDKx0UObzOJ8Znx_gACIFYAAp7OCwABulJc1fwJZ28kBA")
+            k = message.reply_sticker("CAACAgIAAxkBAAEFCN5iqB011-1UhrDKx0UObzOJ8Znx_gACIFYAAp7OCwABulJc1fwJZ28kBA")
+            asyncio.sleep(4)
+            k.delete()
             message.reply_photo(
                 random.choice(PICS),
                 caption=PM_START_TEXT.format(
