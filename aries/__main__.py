@@ -8,7 +8,7 @@ import datetime
 from sys import argv
 from typing import Optional, List
 
-from pyrogram import filters
+from pyrogram import Client, filters
 from telegram import (
     Chat,
     InlineKeyboardButton,
@@ -158,6 +158,10 @@ USER_SETTINGS = {}
 
 GDPR = []
 
+@Client.on_message(filters.command("about"))
+async def about(bot, message):
+    await bot.send_sticker(message.chat.id, "CAACAgUAAxkBAAEFCO5iqDGTUjLt6wXJJY7fLJln6XJ0RAACBwYAAvbuQFU0z8HEtfXgHCQE")
+    
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("aries.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
